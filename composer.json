@@ -1,0 +1,31 @@
+{
+    "name": "webard/nova-eloquent-searchable",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Webard\\NovaEloquentSearchable\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bartłomiej Gajda",
+            "email": "b.gajda@webard.me"
+        }
+    ],
+    "minimum-stability": "stable",
+    "repositories": {
+        "nova": {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    },
+    "require": {
+        "laravel/nova": "^4.20",
+        "illuminate/contracts": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0"
+    }
+}
