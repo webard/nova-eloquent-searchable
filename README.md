@@ -69,7 +69,7 @@ Laravel Nova comes with some [Searchable Columns Classes](https://nova.laravel.c
 
 Full-text search is powerful, but "like" searches on large datasets are very inefficient and they cannot use indexes, so this package derives several additional classes along with value validation functionality to optimize searches.
 
-1. `EqualValue`
+### `EqualValue`
 
 ```php
 use Webard\NovaEloquentSearchable\Query\Search\EqualValue;
@@ -110,7 +110,7 @@ public static function searchableColumns(): array
     }
 ```
 
-2. `EqualRelation`
+### `EqualRelation`
 
 `EqualRelation` class do the same thing as `EqualValue`, but basing on relation instead of column.
 
@@ -138,13 +138,13 @@ public static function searchableColumns(): array
     }
 ```
 
-3. `FullTextValue`
+### `FullTextValue`
 
 `FullTextValue` do the same thing as `SearchableText` class from Laravel Nova, but additionally adds double quote (") characters to search value. So if you search for `John Doe`, to SQL query there is sent `"John Doe"` value. This way, searching in full-text mode is more precise.
 
 Of course value validation like in `EqualValue` is present too.
 
-4. `FullTextRelation`
+### `FullTextRelation`
 
 As above, but works with relations instead of columns.
 
